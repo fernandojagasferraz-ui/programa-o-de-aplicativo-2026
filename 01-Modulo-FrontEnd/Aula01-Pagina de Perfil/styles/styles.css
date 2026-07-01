@@ -1,0 +1,70 @@
+:root {
+  --bg: #061117;
+  --surface: #161b22;
+  --card: #21262d;
+  --primary: #ec4899;
+  --text: #f0f6fc;
+  --muted: #8b949e;
+  --border: #30363d;
+
+
+
+
+}
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+}
+
+.container {
+    width: 90%; /* Ajusta a largura da classe container */
+    max-width: 1200px; /* Para monitores maiores a largura */
+    margin: auto;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+
+    background-color: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    z-index: 999;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a { /* Seleciona a tag <a> que está contida (dentro) da tag <nav> */
+    color: var(--text);
+    text-decoration: none;
+    transition: 3s;
+}
+
+nav a:hover { /* Adiciona um efeito ao passar o mouse sobre os links do m... */
+    color: var(--primary);
+}
